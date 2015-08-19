@@ -1,19 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 p
 {
 	font-family: helvetica, arial, verdana, sans-serif;
 	}
-
-/*body{*/
-	/*background-color: black;
-/*}	*/
 body{
 	background: url("Assets/violetimage.jpg") no-repeat center;
 	background-size: cover;
+	margin: 0 auto;
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+ 
+li {
+    float: left;
+}
+ 
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: gold
+;
+    background-color: Black;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ 
+a:hover, a:active {
+    background-color: purple;
+}
+</style>
+</head>
+<body>
+ 
+<ul>
+
+
+
 
 div {
     border-width:3px;	
-    border-style:outset;
+    border-style:inset;
     border-color: gold;
 }
 	h2
