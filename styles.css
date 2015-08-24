@@ -118,7 +118,7 @@ a:hover, a:active {
 		padding: 20px;
 }
 .photo_gallery {
-    width: 310px;
+    width: 600px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
