@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
      <!-- Your Facebook code -->
@@ -48,15 +49,25 @@
 <font size="8"style="color:white"><b><i>Photography by Jazatopia Entertainment</b></i></font></center>
 <br>
 <br>
-    <center><section class="photo_gallery">
-        <img src="Assets\CientellFineArt.jpg" alt="Fine Art Picture of Cientell" style="width:152px;height:114px;">
-        <img src="Assets\EditorialAirbrush.jpg" alt="Editorial Picture of Airbrushing" style="width:152px;height:114px;">
-        <img src="Assets\EditorialMakeup.jpg" alt="Editorial Picture of Make Up" style="width:152px;height:114px;">
-        <img src="Assets\Aleksandra.jpg" alt="Editorial Picture of Aleksandra" style="width:152px;height:114px;">
-        <img src="Assets\LaniseFamilyPortrait.jpg" alt="Editorial Picture of Aleksandra" style="width:152px;height:114px;">
-        <img src="Assets\FineArt.jpg" alt="Fine Art Picture of Lanise" style="width:152px;height:114px;">
+    <center><section>
+        <img class="img-zoom" src="Assets\CientellFineArt.jpg" alt="Fine Art Picture of Cientell" style="width:152px;height:114px;">
+        <img class="img-zoom" src="Assets\EditorialAirbrush.jpg" alt="Editorial Picture of Airbrushing" style="width:152px;height:114px;">
+        <img class="img-zoom" src="Assets\EditorialMakeup.jpg" alt="Editorial Picture of Make Up" style="width:152px;height:114px;">
+        <img class="img-zoom" src="Assets\Aleksandra.jpg" alt="Editorial Picture of Aleksandra" style="width:152px;height:114px;">
+        <img class="img-zoom" src="Assets\LaniseFamilyPortrait.jpg" alt="Editorial Picture of Aleksandra" style="width:152px;height:114px;">
+        <img class="img-zoom" src="Assets\FineArt.jpg" alt="Fine Art Picture of Lanise" style="width:152px;height:114px;">
   </section></center>
+<script>
 
+$(document).ready(function(){
+   $('.img-zoom').hover(function() {
+       $(this).addClass('transition');
+
+   }, function() {
+       $(this).removeClass('transition');
+   });
+ });
+</script>
 <br>
 <footer>
     <!-- Your like button code -->
